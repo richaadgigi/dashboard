@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="child-src *;">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <base href="">
+    <meta name="theme-color" content="" />
+    <link rel="icon" type="x-icon" href="">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Script Files -->
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/dashboard.js"></script>
+
+  </head>
+  <body>
+
+    <!-- Beggining of navbar -->
+    <nav class="dash-container dash-navbar">
+
+      <div class="brand">
+        <a href="#"><img src="images/logo.png"></a>
+      </div>
+
+      <div class="stock">
+        <div class="dash-row">
+          <div class="stock-box">
+            <span class="name">Forex</span>
+            <span class="currency">USD/CAD</span>
+          </div>
+          <div class="stock-box">
+            <span class="name">Forex</span>
+            <span class="currency">USD/CAD</span>
+          </div>
+          <div class="search">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 8.3273V15.6537" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.6667 11.9905H8.33333" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path fill-rule="evenodd" clip-rule="evenodd" d="M16.6857 2H7.31429C4.04762 2 2 4.31208 2 7.58516V16.4148C2 19.6879 4.0381 22 7.31429 22H16.6857C19.9619 22 22 19.6879 22 16.4148V7.58516C22 4.31208 19.9619 2 16.6857 2Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="account">
+        <div class="dash-row dash-row-centralized account-box">
+          <div class="real-account">
+            <a href="#">
+              <div class="dash-row dash-row-centralized">
+                <div class="text">
+                  <h4 class="dtl">Real Account</h4>
+                  <h1 class="amount">798.62 USD</h1>
+                </div>
+                <div class="icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 8.5L12 15.5L5 8.5" stroke="#28b756" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="notification">
+            <a href="#">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.50083 13.7871V13.5681C3.53295 12.9202 3.7406 12.2925 4.10236 11.7496C4.7045 11.0975 5.1167 10.2983 5.29571 9.43598C5.29571 8.7695 5.29571 8.0935 5.35393 7.42703C5.65469 4.21842 8.82728 2 11.9611 2H12.0387C15.1725 2 18.345 4.21842 18.6555 7.42703C18.7137 8.0935 18.6555 8.7695 18.704 9.43598C18.8854 10.3003 19.2972 11.1019 19.8974 11.7591C20.2618 12.2972 20.4698 12.9227 20.4989 13.5681V13.7776C20.5206 14.648 20.2208 15.4968 19.6548 16.1674C18.907 16.9515 17.8921 17.4393 16.8024 17.5384C13.607 17.8812 10.383 17.8812 7.18762 17.5384C6.09914 17.435 5.08576 16.9479 4.33521 16.1674C3.778 15.4963 3.48224 14.6526 3.50083 13.7871Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.55493 20.8518C10.0542 21.4784 10.7874 21.884 11.5922 21.9787C12.3971 22.0734 13.2072 21.8495 13.8433 21.3564C14.0389 21.2106 14.2149 21.041 14.3672 20.8518" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <div class="account-profile">
+            <a href="#">
+              <div class="profile"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Ending of navbar -->
+
+    <!-- Beginning of contents -->
+    <section class="dash-contents">
+      <div class="dash-row">
+
+        <div class="sidebar">
+          <ul>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -4 24 24" width="20" height="20" preserveAspectRatio="xMinYMin" class="icon__icon"><path d="M1 0a1 1 0 0 1 1 1v14a1 1 0 0 1-2 0V1a1 1 0 0 1 1-1zm12 4a1 1 0 0 1 1 1v10a1 1 0 0 1-2 0V5a1 1 0 0 1 1-1zM7 8a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V9a1 1 0 0 1 1-1z"></path></svg>
+                <span>Board</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -2 24 24" width="20" height="20" preserveAspectRatio="xMinYMin" class="icon__icon"><path d="M5 18v2H3v-2H0V0h11a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5zM3 2H2v14h1V2zm2 0v14h6a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H5zm1 2h5v2H6V4zm0 3h5v2H6V7z"></path></svg>
+                <span>Order Book</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" height="20" preserveAspectRatio="xMinYMin" class="icon__icon"><path d="M6 2H3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2zM3.01 8v9.965H5V13a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4.965h6.013V8H15c-.768 0-1.47-.289-2-.764A2.989 2.989 0 0 1 11 8H9c-.768 0-1.47-.289-2-.764A2.989 2.989 0 0 1 5 8H3.01zm-2-.754A2.993 2.993 0 0 1 0 5V3a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v2c0 .882-.38 1.676-.987 2.225v10.74a2 2 0 0 1-2 2h-7.64A2.01 2.01 0 0 1 9 20H7a2.01 2.01 0 0 1-.373-.035H3.011a2 2 0 0 1-2-2V7.245zM9 17.966V13H7v4.965h2zM12 2H8v3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2zm2 0v3a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1h-3zm0 9h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1z"></path></svg>
+                <span>Market</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1.5 -4 24 24" width="20" height="20" preserveAspectRatio="xMinYMin" class="icon__icon"><path d="M13.071 7.762l6.417 2.575a1 1 0 0 1 .01 1.852l-8.85 3.664a1 1 0 0 1-.765 0L1.032 12.19a1 1 0 0 1 .01-1.852l6.53-2.62c.374-.15 1.556.29 2.693.294 1.215.004 2.387-.417 2.806-.249zM4.064 11.28l6.201 2.567 6.202-2.567-6.202-2.489-6.201 2.489zM10.638.786l8.85 3.551a1 1 0 0 1 .01 1.852l-8.85 3.664a1 1 0 0 1-.765 0L1.032 6.19a1 1 0 0 1 .01-1.852L9.892.786a1 1 0 0 1 .746 0zM4.064 5.28l6.201 2.567 6.202-2.567-6.202-2.489L4.064 5.28z"></path></svg>
+                <span>Portfolio</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-4.5 -2 24 24" width="20" height="20" preserveAspectRatio="xMinYMin" class="icon__icon"><path d="M4 2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H4zm0-2h7a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z"></path><path d="M5 4h5a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm0 5h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1zm4 0h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1zm0 4h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1zm-4 0h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1z"></path></svg>
+                <span>Calc.</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" height="20" preserveAspectRatio="xMinYMin" class="icon__icon"><path d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0 2C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10z"></path><path d="M10 18c.448 0 1.119-.568 1.747-1.823C12.532 14.607 13 12.392 13 10c0-2.392-.468-4.607-1.253-6.177C11.119 2.568 10.447 2 10 2c-.448 0-1.119.568-1.747 1.823C7.468 5.393 7 7.608 7 10c0 2.392.468 4.607 1.253 6.177C8.881 17.432 9.553 18 10 18zm0 2c-2.761 0-5-4.477-5-10S7.239 0 10 0s5 4.477 5 10-2.239 10-5 10z"></path><path d="M2 12h16v2H2v-2zm0-6h16v2H2V6z"></path></svg>
+                <span>News</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" height="20" preserveAspectRatio="xMinYMin" class="icon__icon"><path d="M19.95 11c-.501 5.053-4.765 9-9.95 9-5.523 0-10-4.477-10-10C0 4.815 3.947.551 9 .05v2.012A8.001 8.001 0 0 0 10 18a8.001 8.001 0 0 0 7.938-7h2.013zm0-2h-2.012A8.004 8.004 0 0 0 11 2.062V.049A10.003 10.003 0 0 1 19.95 9z"></path></svg>
+                <span>Manager</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="20" height="20" preserveAspectRatio="xMinYMin" class="icon__icon"><path d="M20 8.163A2.106 2.106 0 0 0 18.926 10c0 .789.433 1.476 1.074 1.837l-.717 2.406a2.105 2.105 0 0 0-2.218 3.058l-2.062 1.602A2.104 2.104 0 0 0 11.633 20l-3.29-.008a2.104 2.104 0 0 0-3.362-1.094l-2.06-1.615A2.105 2.105 0 0 0 .715 14.24L0 11.825A2.106 2.106 0 0 0 1.051 10C1.051 9.22.63 8.54 0 8.175L.715 5.76a2.105 2.105 0 0 0 2.207-3.043L4.98 1.102A2.104 2.104 0 0 0 8.342.008L11.634 0a2.104 2.104 0 0 0 3.37 1.097l2.06 1.603a2.105 2.105 0 0 0 2.218 3.058L20 8.162zM14.823 3.68c0-.063.002-.125.005-.188l-.08-.062a4.103 4.103 0 0 1-4.308-1.428l-.904.002a4.1 4.1 0 0 1-4.29 1.43l-.095.076A4.108 4.108 0 0 1 2.279 7.6a4.1 4.1 0 0 1 .772 2.399c0 .882-.28 1.715-.772 2.4a4.108 4.108 0 0 1 2.872 4.09l.096.075a4.104 4.104 0 0 1 4.289 1.43l.904.002a4.1 4.1 0 0 1 4.307-1.428l.08-.062A4.108 4.108 0 0 1 17.7 12.4a4.102 4.102 0 0 1-.773-2.4c0-.882.281-1.716.773-2.4a4.108 4.108 0 0 1-2.876-3.919zM10 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path></svg>
+                <span>Admin</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="details">
+          <div class="watchlist">
+            <div class="heading">
+              <span>Watchlist</span>
+            </div>
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+              <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener" target="_blank"><span style="display: none;" class="blue-text">Financial Markets</span></a> <span style="display: none;">by TradingView</span></div>
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+              {
+              "colorTheme": "dark",
+              "dateRange": "12M",
+              "showChart": true,
+              "locale": "en",
+              "largeChartUrl": "",
+              "isTransparent": false,
+              "showSymbolLogo": true,
+              "width": "100%",
+              "height": "100%",
+              "plotLineColorGrowing": "rgba(25, 118, 210, 1)",
+              "plotLineColorFalling": "rgba(25, 118, 210, 1)",
+              "gridLineColor": "rgba(42, 46, 57, 1)",
+              "scaleFontColor": "rgba(120, 123, 134, 1)",
+              "belowLineFillColorGrowing": "rgba(33, 150, 243, 0.12)",
+              "belowLineFillColorFalling": "rgba(33, 150, 243, 0.12)",
+              "symbolActiveColor": "rgba(33, 150, 243, 0.12)",
+              "tabs": [
+                {
+                  "title": "Indices",
+                  "symbols": [
+                    {
+                      "s": "FOREXCOM:SPXUSD",
+                      "d": "S&P 500"
+                    },
+                    {
+                      "s": "FOREXCOM:NSXUSD",
+                      "d": "Nasdaq 100"
+                    },
+                    {
+                      "s": "FOREXCOM:DJI",
+                      "d": "Dow 30"
+                    },
+                    {
+                      "s": "INDEX:NKY",
+                      "d": "Nikkei 225"
+                    },
+                    {
+                      "s": "INDEX:DEU30",
+                      "d": "DAX Index"
+                    },
+                    {
+                      "s": "FOREXCOM:UKXGBP",
+                      "d": "FTSE 100"
+                    }
+                  ],
+                  "originalTitle": "Indices"
+                },
+                {
+                  "title": "Commodities",
+                  "symbols": [
+                    {
+                      "s": "CME_MINI:ES1!",
+                      "d": "S&P 500"
+                    },
+                    {
+                      "s": "CME:6E1!",
+                      "d": "Euro"
+                    },
+                    {
+                      "s": "COMEX:GC1!",
+                      "d": "Gold"
+                    },
+                    {
+                      "s": "NYMEX:CL1!",
+                      "d": "Crude Oil"
+                    },
+                    {
+                      "s": "NYMEX:NG1!",
+                      "d": "Natural Gas"
+                    },
+                    {
+                      "s": "CBOT:ZC1!",
+                      "d": "Corn"
+                    }
+                  ],
+                  "originalTitle": "Commodities"
+                },
+                {
+                  "title": "Bonds",
+                  "symbols": [
+                    {
+                      "s": "CME:GE1!",
+                      "d": "Eurodollar"
+                    },
+                    {
+                      "s": "CBOT:ZB1!",
+                      "d": "T-Bond"
+                    },
+                    {
+                      "s": "CBOT:UB1!",
+                      "d": "Ultra T-Bond"
+                    },
+                    {
+                      "s": "EUREX:FGBL1!",
+                      "d": "Euro Bund"
+                    },
+                    {
+                      "s": "EUREX:FBTP1!",
+                      "d": "Euro BTP"
+                    },
+                    {
+                      "s": "EUREX:FGBM1!",
+                      "d": "Euro BOBL"
+                    }
+                  ],
+                  "originalTitle": "Bonds"
+                },
+                {
+                  "title": "Forex",
+                  "symbols": [
+                    {
+                      "s": "FX:EURUSD"
+                    },
+                    {
+                      "s": "FX:GBPUSD"
+                    },
+                    {
+                      "s": "FX:USDJPY"
+                    },
+                    {
+                      "s": "FX:USDCHF"
+                    },
+                    {
+                      "s": "FX:AUDUSD"
+                    },
+                    {
+                      "s": "FX:USDCAD"
+                    }
+                  ],
+                  "originalTitle": "Forex"
+                }
+              ]
+            }
+              </script>
+            </div>
+            <!-- TradingView Widget END -->
+          </div>
+          <div class="dtls">
+            <div class="heading">
+              <span>Details</span>
+            </div>
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+              <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FX" rel="noopener" target="_blank"><span style="display: none;" class="blue-text">EURUSD Rates</span></a> <span style="display: none;">by TradingView</span></div>
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+              {
+              "symbol": "FX:EURUSD",
+              "width": "100%",
+              "height": "100%",
+              "locale": "en",
+              "dateRange": "12M",
+              "colorTheme": "dark",
+              "trendLineColor": "#37a6ef",
+              "underLineColor": "rgba(55, 166, 239, 0.15)",
+              "isTransparent": false,
+              "autosize": true,
+              "largeChartUrl": ""
+            }
+              </script>
+            </div>
+            <!-- TradingView Widget END -->
+          </div>
+        </div>
+
+        <div class="market">
+          <div class="trade">
+            <div class="dash-row">
+              <div class="chart">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                  <div id="tradingview_65e38"></div>
+                  <div class="tradingview-widget-copyright"><a style="display: none;" href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL Chart</span></a> <span style="display: none;">by TradingView</span></div>
+                </div>
+                <!-- TradingView Widget END -->
+              </div>
+              <div class="trade-action">
+
+                <div class="trade-amount">
+                  <div class="trade-amount-input">
+                    <span class="dash-alt-text text">Amount</span>
+                    <span class="amount">USD <span class="input">1</span></span>
+                  </div>
+                  <div class="dash-row">
+                    <div class="trade-amount-minus">
+                      <span>-</span>
+                    </div>
+                    <div class="trade-amount-add">
+                      <span>+</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cad">
+                  <span class="text">CAD quantity</span>
+                  <span class="amount">0.042155</span>
+                </div>
+
+                <div class="actions">
+                  <div class="buy">
+                    <div class="dtl">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -5 24 24" width="35" height="35" preserveAspectRatio="xMinYMin" class="icon__icon"><path d="M1 10a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm4-4a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V7a1 1 0 0 1 1-1zm4-4a1 1 0 0 1 1 1v10a1 1 0 0 1-2 0V3a1 1 0 0 1 1-1zm4-2a1 1 0 0 1 1 1v12a1 1 0 0 1-2 0V1a1 1 0 0 1 1-1z"></path></svg>
+                      <span class="text">BUY</span>
+                    </div>
+                  </div>
+                  <div class="sell">
+                    <div class="dtl">
+                      <svg style="transform: " xmlns="http://www.w3.org/2000/svg" viewBox="-5 -5 24 24" width="35" height="35" preserveAspectRatio="xMinYMin" class="icon__icon"><path d="M1 10a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zm4-4a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V7a1 1 0 0 1 1-1zm4-4a1 1 0 0 1 1 1v10a1 1 0 0 1-2 0V3a1 1 0 0 1 1-1zm4-2a1 1 0 0 1 1 1v12a1 1 0 0 1-2 0V1a1 1 0 0 1 1-1z"></path></svg>
+                      <span class="text">SELL</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="order">
+            <div class="dtls">
+              <span class="text">ORDER BOOK - CURRENCY - USD/CAD</span>
+              <svg class="expand" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 15.5L12 8.5L19 15.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+  </body>
+</html>
